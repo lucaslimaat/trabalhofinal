@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 
 
+
 export default function Usuarios() {
   const [produtos, setProdutos] = useState([]);
   
@@ -25,15 +26,17 @@ export default function Usuarios() {
       <Body1>
       </Body1>
           
-
+      
       <Body3>
       {produtos
         ? produtos.map((item) => {
+          console.log(item)
             return (
               <div key={item.id}>
                 <Teste>
                   
                   {" "}
+                  <Imagens src={`img/${item.img}`} alt="imgcamisa"/>
                   <Span>{item.id}</Span> - <Span>{item.nome_produto}</Span> - <Span>{item.tamanhos_disp}{" "}</Span>
              
                 </Teste>
@@ -82,4 +85,8 @@ justify-content: space-between;
 align-items: flex-start;
 background-color: black;
 text-align: left;
+`
+const Imagens = styled.img`
+height: 50px;
+width: 50px;
 `
