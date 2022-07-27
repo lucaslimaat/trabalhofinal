@@ -1,6 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "react-router-dom";
+import { AiOutlineShoppingCart } from 'react-icons/ai';
+import { BsPersonFill } from 'react-icons/bs';
 
 const Header = () => {
 
@@ -12,11 +14,13 @@ const Header = () => {
                 <MenuLink href="/">
                     Início
                 </MenuLink>
-                <Link to="/produtos">
+                
+                <MenuLink href="/produtos">
                     Produtos
-                </Link>
+                </MenuLink>
+                
             </BodyBotoes>
-            <Logo2>Outer</Logo2>
+            <Logo2><AiOutlineShoppingCart></AiOutlineShoppingCart><BsPersonFill></BsPersonFill></Logo2>
         </Body>
 
     )
@@ -44,7 +48,7 @@ font-family: 'Quicksand', sans-serif;
 const Logo2 = styled.div`
 margin-right: 5%;
 color: white;
-font-size: 4rem;
+font-size: 1.5rem;
 font-family: 'Quicksand', sans-serif;
 `
 const MenuLink = styled.a`
@@ -58,6 +62,5 @@ transition: .3s;
   color: #808080;
 }
 `
-
 
 export default Header
