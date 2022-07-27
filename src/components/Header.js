@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
- 
+import { Link } from "react-router-dom";
 
 const Header = () => {
 
@@ -9,12 +9,12 @@ const Header = () => {
         <Body>
             <Logo1>Outer</Logo1>
             <BodyBotoes>
-                <MenuLink href="">
+                <MenuLink href="/">
                     Início
                 </MenuLink>
-                <MenuLink href="">
+                <Link to="/produtos">
                     Produtos
-                </MenuLink>
+                </Link>
             </BodyBotoes>
             <Logo2>Outer</Logo2>
         </Body>
@@ -58,5 +58,6 @@ transition: .3s;
   color: #808080;
 }
 `
+
 
 export default Header
