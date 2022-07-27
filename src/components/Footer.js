@@ -1,17 +1,19 @@
 import React from "react"
 import styled from "styled-components"
- 
+
 const Footer = () => {
 
     return (
 
         <Body>
             <BodyRodape>
-            <Title>Outer</Title>
-            <Text>A Outer é uma loja de roupas online que surgiu em 2022, contendo roupas e artigos de moda. Com marcas como: Nike, Adidas, Puma, Lacoste, New Era, nosso estoque oferece o melhor serviço possivel. Nossa venture já nasceu cheia de expectativas e possibilidades, renovando-as mês a mês, sempre somando qualidade aos produtos que oferece à seus clientes.</Text>
-            <Copy>Copyright &copy;2022 Outer Loja Oficial</Copy>
+                <Title>Outer</Title>
+                <Text>A Outer é uma loja de roupas online que surgiu em 2022, contendo roupas e artigos de moda. Com marcas como: Nike, Adidas, Puma, Lacoste, New Era, nosso estoque oferece o melhor serviço possivel. Nossa venture já nasceu cheia de expectativas e possibilidades, renovando-as mês a mês, sempre somando qualidade aos produtos que oferece à seus clientes.</Text>
             </BodyRodape>
-            
+            <Container>
+                <Copy>Copyright &copy;2022 Outer Loja Oficial</Copy>
+            </Container>
+
         </Body>
 
     )
@@ -53,12 +55,16 @@ text-align: center;
  font-size: 15px;
 }
 `
-
+const Container = styled.div`
+display: flex;
+justify-content: flex-end;
+background: #EFEFEF;
+`
 const Copy = styled.div`
 font-size: 14px;
 word-spacing: 2px;
 font-family: Josefin Sans, Arial, Helvetica, sans-serif;
-
+margin-right: 10px;
 `
 
 export default Footer

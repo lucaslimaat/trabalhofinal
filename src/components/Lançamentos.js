@@ -1,6 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import ImgA from "../img/camisa1.jpg";
+import ImgA from "../img/moletompreto.png";
+import ImgB from "../img/shortpreto.png";
+import ImgC from "../img/shortmarrom.png";
+import ImgD from "../img/camisapreta.png";
+import ImgE from "../img/camisaverde.png";
+import ImgF from "../img/camisaazul.png";
 
 
 const Lançamentos = () => {
@@ -9,34 +14,34 @@ const Lançamentos = () => {
     return (
         <Body>
             <BodyText>
-                <Text1>Lançamentos</Text1>
+                <Text1>Promoções</Text1>
             </BodyText>
             <BodyCards1>
                 <Card>
                     <Img src={ImgA} />
-                    <TxtFoto>Roupa 1</TxtFoto>
+                    <TxtFoto>30% OFF</TxtFoto>
                 </Card>
                 <Card>
-                    <Img src={ImgA} />
-                    <TxtFoto>Roupa 1</TxtFoto>
+                    <Img src={ImgB} />
+                    <TxtFoto>25% OFF</TxtFoto>
                 </Card>
                 <Card>
-                    <Img src={ImgA} />
-                    <TxtFoto>Roupa 1</TxtFoto>
+                    <Img src={ImgC} />
+                    <TxtFoto>25% OFF</TxtFoto>
                 </Card>
             </BodyCards1>
             <BodyCards2>
                 <Card>
-                    <Img src={ImgA} />
-                    <TxtFoto>Roupa 1</TxtFoto>
+                    <Img src={ImgD} />
+                    <TxtFoto>50% OFF</TxtFoto>
                 </Card>
                 <Card>
-                    <Img src={ImgA} />
-                    <TxtFoto>Roupa 1</TxtFoto>
+                    <Img src={ImgE} />
+                    <TxtFoto>50% OFF</TxtFoto>
                 </Card>
                 <Card>
-                    <Img src={ImgA} />
-                    <TxtFoto>Roupa 1</TxtFoto>
+                    <Img src={ImgF} />
+                    <TxtFoto>50% OFF</TxtFoto>
                 </Card>
             </BodyCards2>
         </Body>
@@ -88,7 +93,7 @@ flex-direction: column;
 `
 const Img = styled.img`
 width: 362px;
-height: 471px;
+height: 360px;
 border-width: 3px;
 border-color: black;
 border-style: solid;

@@ -40,13 +40,13 @@ justify-content: center;
 align-items: center;
 `
 const Logo1 = styled.div`
-margin-left: 5%;
+margin-left: 3%;
 color: white;
 font-size: 4rem;
 font-family: 'Quicksand', sans-serif;
 `
 const Logo2 = styled.div`
-margin-right: 5%;
+margin-right: 7.5%;
 color: white;
 font-size: 1.5rem;
 font-family: 'Quicksand', sans-serif;
