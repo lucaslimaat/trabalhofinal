@@ -1,18 +1,17 @@
 import React from "react";
-import styled from "styled-components"
-import Usuarios from "../components/Usuarios";
+import Header from "../components/Header"
+import Lançamentos from "../components/Lançamentos"
+import Footer from "../components/Footer"
 
 
 const Home = () => {
     return(
         <div>
-        <Titulo>Inicio</Titulo>
-        <Usuarios></Usuarios>
+        <Header/>
+        <Lançamentos/>
+        <Footer/>
         </div>
     )
 }
-
-const Titulo = styled.div`
-`
 
 export default Home;
