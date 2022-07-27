@@ -49,6 +49,10 @@ margin: 10px auto;
 line-height: 30px;
 font-size: 20px;
 text-align: center;
+@media screen and (max-width: 900px){
+ width: 500px;
+ font-size: 15px;
+}
 `
 const Container = styled.div`
     background: #EFEFEF;

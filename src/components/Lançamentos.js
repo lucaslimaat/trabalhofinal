@@ -66,6 +66,7 @@ const BodyCards1 = styled.div`
 display: flex;
 justify-content: space-evenly;
 align-items: center;
+flex-wrap: wrap;
 height: auto;
 width: 100%;
 background: white;
@@ -79,6 +80,7 @@ align-items: center;
 height: auto;
 width: 100%;
 background: white;
+flex-wrap: wrap;
 `
 const Card = styled.div`
 display: flex;

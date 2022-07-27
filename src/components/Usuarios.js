@@ -37,7 +37,7 @@ export default function Usuarios() {
                   
                   {" "}
                   <Imagens src={`img/${item.img}`} alt="imgcamisa"/>
-                  <Span>{item.id}</Span> - <Span>{item.nome_produto}</Span> - <Span>{item.tamanhos_disp}{" "}</Span>
+                  - <Span>{item.nome_produto}</Span> - <Span>{item.tamanhos_disp}{" "}</Span>
              
                 </Teste>
               </div>
@@ -56,10 +56,12 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 align-items: center;
-background-color: black;
+background-color: white;
 `
 const Teste = styled.div`
-background-color: black;
+background-color: white;
+display: flex;
+flex-direction: column;
 `
 
 
@@ -73,7 +75,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-background-color: black;
+background-color: white;
 `
 
 const Body3 = styled.div`
@@ -83,10 +85,10 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 align-items: flex-start;
-background-color: black;
+background-color: white;
 text-align: left;
 `
 const Imagens = styled.img`
-height: 50px;
-width: 50px;
+height: 500px;
+width: 500px;
 `
